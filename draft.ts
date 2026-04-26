@@ -22,54 +22,21 @@ class CurrentAccount implements BankAccount {
 }
 
 // Abstract class that serves as the base for any type of bank account
-abstract class BankAccount {
-  balance: number;
-
-  constructor(initialBalance: number) {
-    this.balance = initialBalance;
-  }
-
-  // Concrete method (with implementation)
-  deposit(amount: number): void {
-    this.balance += amount;
-  }
-
-  // Abstract method (must be implemented by subclasses)
-  abstract withdraw(amount: number): void;
+// BankAccount could be an interface, a concrete class,
+// or an abstract class. For the sendMoney function, the specific implementation
+// does not matter—only that BankAccount includes withdraw and deposit methods.
+function sendMoney(
+  sender: BankAccount,
+  receiver: BankAccount,
+  amount: number
+) {
+  sender.withdraw(amount);
+  receiver.deposit(amount);
 }
 
-class CurrentAccount extends BankAccount {
-  withdraw(amount: number): void {
-    const fee = 2; // Current accounts have a fixed withdrawal fee
-    const totalAmount = amount + fee;
+const lucasAccount = new CurrentAccount(500, 200);
+const mariaAccount = new SavingsAccount(300);
 
-    if (this.balance >= totalAmount) {
-      this.balance -= totalAmount;
-    } else {
-      console.log("Insufficient balance.");
-    }
-  }
-}
+// transferring $100 from Lucas to Maria
+sendMoney(lucasAccount, mariaAccount, 100);
 
-class SavingsAccount extends BankAccount {
-  withdraw(amount: number): void {
-    if (this.balance >= amount) {
-      this.balance -= amount;
-    } else {
-      console.log("Insufficient balance.");
-    }
-  }
-}
-
-// ❌ Error! Cannot instantiate an abstract class
-const genericAccount = new BankAccount(1000); // Error
-
-// ✅ Creating a current account
-const currentAccount = new CurrentAccount(2000); // uses the BankAccount constructor
-currentAccount.deposit(500); // uses the deposit method from BankAccount
-currentAccount.withdraw(300); // uses the withdraw method from CurrentAccount
-
-// ✅ Creating a savings account
-const savingsAccount = new SavingsAccount(1500); // uses the BankAccount constructor
-savingsAccount.deposit(1100); // uses the deposit method from BankAccount
-savingsAccount.withdraw(500); // uses the withdraw method from SavingsAccount
