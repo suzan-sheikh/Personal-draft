@@ -34,9 +34,4 @@ function sendMoney(
   receiver.deposit(amount);
 }
 
-const lucasAccount = new CurrentAccount(500, 200);
-const mariaAccount = new SavingsAccount(300);
-
-// transferring $100 from Lucas to Maria
-sendMoney(lucasAccount, mariaAccount, 100);
 
