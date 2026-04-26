@@ -21,16 +21,3 @@ class CurrentAccount implements BankAccount {
   }
 }
 
-class SavingsAccount implements BankAccount {
-  balance: number;
-
-  deposit(amount: number): void {
-    // can have different logic from CurrentAccount
-    // but must respect the method signature,
-    // i.e., parameters (amount: number) and return type (void)
-  }
-
-  withdraw(amount: number): void {
-    // ...
-  }
-}
