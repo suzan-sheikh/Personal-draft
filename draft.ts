@@ -21,10 +21,7 @@ class CurrentAccount implements BankAccount {
   }
 }
 
-// Abstract class that serves as the base for any type of bank account
-// BankAccount could be an interface, a concrete class,
-// or an abstract class. For the sendMoney function, the specific implementation
-// does not matter—only that BankAccount includes withdraw and deposit methods.
+
 function sendMoney(
   sender: BankAccount,
   receiver: BankAccount,
