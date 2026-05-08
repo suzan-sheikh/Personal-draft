@@ -24,9 +24,9 @@
 
 // // console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
 
-// assignment_1 
-const filterEvenNumbers = (input: number[]): number[] => {
-  return input.filter((i) => i % 2 === 0);
-};
+// // assignment_1 
+// const filterEvenNumbers = (input: number[]): number[] => {
+//   return input.filter((i) => i % 2 === 0);
+// };
 
-console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
