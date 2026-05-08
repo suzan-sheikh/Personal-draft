@@ -39,17 +39,23 @@ class NewClass {
     this.age = age;
   }
 }
-class SubClass extends NewClass{
+class SubClass extends NewClass {
   designation: string;
-  constructor(person: string, age: number, designation: string){
-    super(person, age)
-    this.designation = designation
+  constructor(person: string, age: number, designation: string) {
+    super(person, age);
+    this.designation = designation;
   }
-  callMethod(T: boolean, X: string){
-    return {name: this.person, age: this.age, designation: this.designation, isSelected: T, payment: X};
+  callMethod(T: boolean, X: string) {
+    return {
+      name: this.person,
+      age: this.age,
+      designation: this.designation,
+      isSelected: T,
+      payment: X,
+    };
   }
 }
 
-const result = new SubClass("suzan", 30, "developer")
+const result = new SubClass("suzan", 30, "developer");
 
 console.log(result.callMethod(true, "Nex Month"));
