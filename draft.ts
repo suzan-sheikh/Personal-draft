@@ -39,14 +39,13 @@ class NewClass {
     this.age = age;
   }
 }
-
 class SubClass extends NewClass{
   designation: string;
   constructor(person: string, age: number, designation: string){
     super(person, age)
     this.designation = designation
   }
-  callMethod(T: boolean){
+  callMethod(T: boolean, X: string){
     return {name: this.person, age: this.age, designation: this.designation, isSelected: T};
   }
 }
