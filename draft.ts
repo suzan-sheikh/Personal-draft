@@ -59,3 +59,5 @@ class SubClass extends NewClass {
 const result = new SubClass("suzan", 30, "developer");
 
 console.log(result.callMethod(true, "Nex Month"));
+
+//! code is continue .......
