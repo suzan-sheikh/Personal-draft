@@ -24,9 +24,22 @@
 
 // // console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
 
-// // assignment_1 
+// // assignment_1
 // const filterEvenNumbers = (input: number[]): number[] => {
 //   return input.filter((i) => i % 2 === 0);
 // };
 
 // console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+class NewClass {
+  person: string;
+  age: number;
+  constructor(person: string, age: number) {
+    this.person = person;
+    this.age = age;
+  }
+}
+
+class SubClass extends NewClass{
+  
+}
