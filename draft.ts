@@ -50,3 +50,5 @@ class SubClass extends NewClass{
     return this.person, this.age, this.designation;
   }
 }
+
+const result = new SubClass("suzan", 30, "developer")
