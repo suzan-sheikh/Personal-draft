@@ -46,11 +46,11 @@ class SubClass extends NewClass{
     super(person, age)
     this.designation = designation
   }
-  callMethod(){
-    return {name: this.person, age: this.age, designation: this.designation};
+  callMethod(T: boolean){
+    return {name: this.person, age: this.age, designation: this.designation, isSelected: T};
   }
 }
 
 const result = new SubClass("suzan", 30, "developer")
 
-console.log(result.callMethod());
+console.log(result.callMethod(true));
