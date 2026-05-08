@@ -41,5 +41,11 @@ class NewClass {
 }
 
 class SubClass extends NewClass{
-  
+  designation: string;
+  constructor(person: string, age: number, designation: string){
+    super(person, age)
+    this.designation = designation
+  }
+  callMethod(){
+  }
 }
