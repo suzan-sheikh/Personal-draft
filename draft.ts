@@ -47,8 +47,10 @@ class SubClass extends NewClass{
     this.designation = designation
   }
   callMethod(){
-    return this.person, this.age, this.designation;
+    return {name: this.person, age: this.age, designation: this.designation};
   }
 }
 
 const result = new SubClass("suzan", 30, "developer")
+
+console.log(result.callMethod());
