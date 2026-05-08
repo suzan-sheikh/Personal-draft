@@ -46,7 +46,7 @@ class SubClass extends NewClass{
     this.designation = designation
   }
   callMethod(T: boolean, X: string){
-    return {name: this.person, age: this.age, designation: this.designation, isSelected: T};
+    return {name: this.person, age: this.age, designation: this.designation, isSelected: T, payment: X};
   }
 }
 
