@@ -47,5 +47,6 @@ class SubClass extends NewClass{
     this.designation = designation
   }
   callMethod(){
+    return this.person, this.age, this.designation;
   }
 }
