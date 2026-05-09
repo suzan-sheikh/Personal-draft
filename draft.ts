@@ -58,6 +58,23 @@ class SubClass extends NewClass {
 
 const result = new SubClass("suzan", 30, "developer");
 
-console.log(result.callMethod(true, "Nex Month"));
+// rest and spread operator
+
+const number:number[] = [1, 2, 3, 4];
+
+const newNumber:number[] = [...number, 10, 20 , 40]
+console.log(newNumber);
+
+
+
+
+
+
+
+
+
+
 
 //! code is continue .......
+
+
