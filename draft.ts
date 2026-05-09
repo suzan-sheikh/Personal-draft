@@ -93,3 +93,5 @@
 // ani.makeSound();
 
 //! code is continue .......
+
+// OOP in TypeScript
