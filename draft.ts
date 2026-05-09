@@ -95,3 +95,14 @@
 //! code is continue .......
 
 // OOP in TypeScript
+
+const person = {
+  name: "Lucas", // primitive value of type string
+  surname: "Garcez",
+  age: 28, // primitive value of type number
+  address: {
+    // object type containing the keys "city" and "country"
+    city: "Melbourne",
+    country: "Australia",
+  },
+};
