@@ -69,7 +69,29 @@ console.log(newNumber);
 
 
 
+class Animal {
+  makeSound() {
+    console.log("Animal makes sound");
+  }
+}
 
+class Dog extends Animal {
+  makeSound() {
+    console.log("Dog barks");
+  }
+}
+
+class Cat extends Animal {
+  makeSound() {
+    console.log("Cat meows");
+  }
+}
+
+const dog = new Dog();
+const cat = new Cat();
+
+dog.makeSound();
+cat.makeSound();
 
 
 
