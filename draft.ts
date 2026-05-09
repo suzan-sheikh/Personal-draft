@@ -60,14 +60,10 @@ const result = new SubClass("suzan", 30, "developer");
 
 // rest and spread operator
 
-const number:number[] = [1, 2, 3, 4];
+const number: number[] = [1, 2, 3, 4];
 
-const newNumber:number[] = [...number, 10, 20 , 40]
+const newNumber: number[] = [...number, 10, 20, 40];
 console.log(newNumber);
-
-
-
-
 
 class Animal {
   makeSound() {
@@ -87,18 +83,13 @@ class Cat extends Animal {
   }
 }
 
-const ani = new Animal()
+const ani = new Animal();
 
 const dog = new Dog();
 const cat = new Cat();
 
 dog.makeSound();
 cat.makeSound();
-ani.makeSound()
-
-
-
+ani.makeSound();
 
 //! code is continue .......
-
-
