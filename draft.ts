@@ -106,3 +106,21 @@ const person = {
     country: "Australia",
   },
 };
+
+class Person {
+  name: string; // attribute
+  surname: string; // attribute
+  age: number; // attribute
+
+  // constructor method (special method)
+  constructor(name: string, surname: string, age: number) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+  }
+
+  // method to obtain the full name: "Lucas Garcez"
+  getFullName() {
+    return `${this.name} ${this.surname}`;
+  }
+}
