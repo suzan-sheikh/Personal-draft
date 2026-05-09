@@ -124,3 +124,7 @@ class Person {
     return `${this.name} ${this.surname}`;
   }
 }
+
+const lucas = new Person("Lucas", "Garcez", 28);
+lucas.name; // "Lucas"
+lucas.getFullName(); // "Lucas Garcez"
