@@ -31,65 +31,65 @@
 
 // console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
 
-class NewClass {
-  person: string;
-  age: number;
-  constructor(person: string, age: number) {
-    this.person = person;
-    this.age = age;
-  }
-}
-class SubClass extends NewClass {
-  designation: string;
-  constructor(person: string, age: number, designation: string) {
-    super(person, age);
-    this.designation = designation;
-  }
-  callMethod(T: boolean, X: string) {
-    return {
-      name: this.person,
-      age: this.age,
-      designation: this.designation,
-      isSelected: T,
-      payment: X,
-    };
-  }
-}
+// class NewClass {
+//   person: string;
+//   age: number;
+//   constructor(person: string, age: number) {
+//     this.person = person;
+//     this.age = age;
+//   }
+// }
+// class SubClass extends NewClass {
+//   designation: string;
+//   constructor(person: string, age: number, designation: string) {
+//     super(person, age);
+//     this.designation = designation;
+//   }
+//   callMethod(T: boolean, X: string) {
+//     return {
+//       name: this.person,
+//       age: this.age,
+//       designation: this.designation,
+//       isSelected: T,
+//       payment: X,
+//     };
+//   }
+// }
 
-const result = new SubClass("suzan", 30, "developer");
+// const result = new SubClass("suzan", 30, "developer");
 
-// rest and spread operator
+// // rest and spread operator
 
-const number: number[] = [1, 2, 3, 4];
+// const number: number[] = [1, 2, 3, 4];
 
-const newNumber: number[] = [...number, 10, 20, 40];
-console.log(newNumber);
+// const newNumber: number[] = [...number, 10, 20, 40];
+// console.log(newNumber);
 
-class Animal {
-  makeSound() {
-    console.log("Animal makes sound");
-  }
-}
+// class Animal {
+//   makeSound() {
+//     console.log("Animal makes sound");
+//   }
+// }
 
-class Dog extends Animal {
-  makeSound() {
-    console.log("Dog barks");
-  }
-}
+// class Dog extends Animal {
+//   makeSound() {
+//     console.log("Dog barks");
+//   }
+// }
 
-class Cat extends Animal {
-  makeSound() {
-    console.log("Cat meows");
-  }
-}
+// class Cat extends Animal {
+//   makeSound() {
+//     console.log("Cat meows");
+//   }
+// }
 
-const ani = new Animal();
+// const ani = new Animal();
 
-const dog = new Dog();
-const cat = new Cat();
+// const dog = new Dog();
+// const cat = new Cat();
 
-dog.makeSound();
-cat.makeSound();
-ani.makeSound();
+// dog.makeSound();
+// cat.makeSound();
+// ani.makeSound();
 
 //! code is continue .......
