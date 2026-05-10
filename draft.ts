@@ -61,3 +61,27 @@ class NextPerson {
      return name + ' ' + age
    } 
 }
+
+// class person
+
+class Person {
+   private readonly credentials: string = ''
+   private name: string = ''
+   private department: string = ''
+
+   constructor(value: string){
+      this.credentials = value
+   }
+
+   public setName(name: string): void {
+      if(!this.credentials) return
+      this.name = name
+      // logic get department
+      const userDepartment = axios.get(.....)
+      if(userDepartment) this.department = userDepartment
+   }
+
+   public getName(){
+     return `Employee name: ${this.name}, Department: ${this.department}`
+   }
+}
