@@ -32,3 +32,22 @@ function sendMoney(
 }
 
 
+// person object
+class Person {
+   name: string = ''
+   age: number = 0
+}
+
+// motor vehicle object
+class Motor {
+  make: string = ''
+  model: string = ''
+  color: string = ''
+}
+
+// create a new instance of each
+const person1 = new Person()
+const motor1 = new Motor()
+
+// warning Property 'age' does not exist on type 'Motor'
+// motor1.age() 
