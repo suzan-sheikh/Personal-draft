@@ -51,3 +51,13 @@ const motor1 = new Motor()
 
 // warning Property 'age' does not exist on type 'Motor'
 // motor1.age() 
+
+// person class object
+class NextPerson {
+   public name: string = ''
+   public age: string = ''
+
+   public greetings(){
+     return name + ' ' + age
+   } 
+}
